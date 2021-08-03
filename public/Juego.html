@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Audio Juego</title>
+    <script src="assets/js/juego/d3.min.js"></script>
+    <script src="assets/js/juego/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap2.min.css">
+
+    <style>
+        .boton {
+            cursor: pointer;
+        }
+
+        body {
+            padding-bottom: 70px;
+            padding-top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <!---CONTENEDOR  DEL NAVBAR-->
+<nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
+    <a class="navbar-brand" target="_blank" href="//parzibyte.me/blog">Simon says</a>
+    <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="MediosDigitales">Regresar a Medios Digitales&nbsp;<i
+                        class="fa fa-hands-helping"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--CONTENEDOR DEL JUEGO-->
+<main class="container-fluid">
+    <div class="row text-center">
+        <div class="col-12">
+            <h1>Simon says - By Parzibyte</h1>
+        </div>
+        <div class="col-12 table-responsive">
+            <button id="comenzar" class="mb-2 btn btn-success">Comenzar juego</button>
+            <div id="contenedorJuego"></div>
+        </div>
+    </div>
+</main>
+<!--CONTENEDOR DEL FOOTER-->
+<footer class="px-2 py-2 fixed-bottom bg-dark">
+        <span class="text-muted">Simon says game 
+            <a class="text-white" href="//parzibyte.me/blog"></a>
+            &nbsp;|&nbsp;
+            <a target="_blank" class="text-white" href="//github.com/parzibyte/simon-game-javascript">
+                MaxDigital
+            </a>
+        </span>
+</footer>
+<script src="assets/js/juego/game.js"></script>
+</body>
+</html>
